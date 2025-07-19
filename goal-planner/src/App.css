@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+.goal-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.goal-card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.goal-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #555;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.progress-bar {
+  background-color: #e0e0e0;
+  height: 12px;
+  border-radius: 6px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #4caf50;
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+form {
+  background-color: #ffffff;
+  padding: 24px;
+  max-width: 420px;
+  margin: 32px auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 16px;
+}
+
+form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border 0.3s, background 0.3s;
+}
+
+form input:focus {
+  border-color: #007bff;
+  background-color: #ffffff;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+.goal-card button {
+  margin-top: 12px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  background-color: #dc3545;
   color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.goal-card button:hover {
+  background-color: #c82333;
+}
+.deposit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 32px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deposit-form select,
+.deposit-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border 0.3s;
 }
+
+.deposit-form select:focus,
+.deposit-form input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+.deposit-form button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.deposit-form button:hover {
+  background-color: #0056b3;
+}
+.overview {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.overview h2 {
+  margin-bottom: 12px;
+}
+
+.overview p {
+  margin: 6px 0;
+  font-size: 1rem;
+}
+
