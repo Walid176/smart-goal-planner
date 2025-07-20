@@ -1,3 +1,9 @@
+body {
+  font-family: sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
 .goal-card {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -7,19 +13,16 @@
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
-
 .goal-card h2 {
   margin-top: 0;
   font-size: 1.2rem;
   color: #333;
 }
-
 .goal-card p {
   margin: 6px 0;
   font-size: 0.95rem;
   color: #555;
 }
-
 .progress-bar {
   background-color: #e0e0e0;
   height: 12px;
@@ -27,9 +30,8 @@
   margin-top: 12px;
   overflow: hidden;
 }
-
 .progress-fill {
-  background-color: #4caf50;
+  background-color: #007bff;
   height: 100%;
   width: 0%;
   transition: width 0.4s ease-in-out;
@@ -46,7 +48,6 @@ form {
   flex-direction: column;
   gap: 16px;
 }
-
 form input {
   padding: 12px;
   font-size: 1rem;
@@ -55,13 +56,11 @@ form input {
   background-color: #f9f9f9;
   transition: border 0.3s, background 0.3s;
 }
-
 form input:focus {
   border-color: #007bff;
   background-color: #ffffff;
   outline: none;
 }
-
 form button {
   padding: 12px;
   font-size: 1rem;
@@ -72,7 +71,6 @@ form button {
   cursor: pointer;
   transition: background 0.3s;
 }
-
 form button:hover {
   background-color: #0056b3;
 }
@@ -86,7 +84,6 @@ form button:hover {
   border-radius: 6px;
   cursor: pointer;
 }
-
 .goal-card button:hover {
   background-color: #c82333;
 }
@@ -102,7 +99,6 @@ form button:hover {
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-
 .deposit-form select,
 .deposit-form input {
   padding: 10px;
@@ -112,14 +108,12 @@ form button:hover {
   background-color: #f9f9f9;
   transition: border 0.3s;
 }
-
 .deposit-form select:focus,
 .deposit-form input:focus {
   border-color: #007bff;
   outline: none;
   background-color: #fff;
 }
-
 .deposit-form button {
   padding: 10px;
   font-size: 1rem;
@@ -130,7 +124,6 @@ form button:hover {
   cursor: pointer;
   transition: background 0.3s;
 }
-
 .deposit-form button:hover {
   background-color: #0056b3;
 }
@@ -143,13 +136,74 @@ form button:hover {
   background-color: #f8f8f8;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-
 .overview h2 {
   margin-bottom: 12px;
 }
-
 .overview p {
   margin: 6px 0;
   font-size: 1rem;
 }
+.top-panel {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.overview,
+.deposit-form,
+.new-goal-form {
+  flex: 1 1 30%;
+  min-width: 320px;
+  max-width: 360px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview h3,
+.new-goal-form h3,
+.deposit-form h3 {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px auto;
+  padding: 0 20px;
+  max-width: 800px;
+}
+.goal-card {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 240px;
+}
+.goal-card h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goal-card p {
+  margin: 4px 0;
+}
+.progress-fill {
+  transition: width 0.5s ease;
+}
+
+
 

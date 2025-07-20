@@ -1,13 +1,22 @@
 {
   "goals": [
     {
-      "id": "1",
-      "name": "Travel Fund - Japan",
-      "targetAmount": 5000,
-      "savedAmount": 3200,
-      "category": "Travel",
-      "deadline": "2025-12-31",
-      "createdAt": "2024-01-15"
+      "id": 1,
+      "name": "test5",
+      "category": "test5",
+      "targetAmount": 1006,
+      "savedAmount": 780,
+      "deadline": "2025-07-27",
+      "createdAt": "2025-07-20"
+    },
+    {
+      "name": "test1",
+      "category": "test34",
+      "targetAmount": 10000,
+      "savedAmount": 9999,
+      "deadline": "2025-10-14",
+      "createdAt": "2025-07-21",
+      "id": 2
     }
   ]
 }
